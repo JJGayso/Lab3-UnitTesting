@@ -8,8 +8,8 @@ import org.junit.Test;
 
 public class PrimeFactorsTest {
 	
-	private List<Integer> list() {
-		return Arrays.asList();
+	private List<Integer> list(Integer...integers) {
+		return Arrays.asList(integers);
 	}
 
 	@Test
