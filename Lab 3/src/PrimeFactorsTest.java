@@ -6,8 +6,8 @@ import org.junit.Test;
 public class PrimeFactorsTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testOne() {
+		assertEquals(list(), PrimeFactors.generate(1));
 	}
 
 }
