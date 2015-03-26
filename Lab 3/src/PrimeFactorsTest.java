@@ -7,14 +7,18 @@ import org.junit.Test;
 
 
 public class PrimeFactorsTest {
+	
+	private List<Integer> list() {
+		return Arrays.asList();
+	}
 
 	@Test
 	public void testOne() {
 		assertEquals(list(), PrimeFactors.generate(1));
 	}
 
-	private List<Integer> list() {
-		return Arrays.asList();
+	@Test
+	public void testTwo() throws Exception {
+		assertEquals(list(2), PrimeFactors.generate(2));
 	}
-
 }
