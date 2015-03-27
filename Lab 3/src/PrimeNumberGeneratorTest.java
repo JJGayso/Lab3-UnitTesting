@@ -19,7 +19,7 @@ public class PrimeNumberGeneratorTest {
 	@Before
 	public void initialize() {
 		primeNumbers = new PrimeNumberGenerator();
-		
+	}
 	
 	public PrimeNumberGeneratorTest (Integer inputNumber, List<Integer> expectedResult) {
 		this.inputNumber = inputNumber;
@@ -27,9 +27,9 @@ public class PrimeNumberGeneratorTest {
 	}
 	
 	@Parameterized.Parameters
-	public static Collection producePrimeNumers() {
+	public static Collection<Object[]> producePrimeNumers() {
 		return Arrays.asList(new Object[][] {
-				
+				{1, null}
 		});
 	}
 	
