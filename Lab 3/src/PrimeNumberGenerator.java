@@ -8,9 +8,8 @@ public class PrimeNumberGenerator {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
 		if (inputNumber == 2) {
 			primes.add(1);
-			return primes;
 		}
-		return null;
+		return primes;
 	}
 	
 }
