@@ -8,11 +8,11 @@ import org.junit.runner.RunWith;
 public class PrimeNumberGeneratorTest {
 	private Integer inputNumber;
 	private Boolean expectedResult;
-	private PrimeNumberChecker primeNumberChecker;
+	private PrimeNumberGenerator primeNumbers;
 	
 	@Before
 	public void initialize() {
-		primeNumberChecker = new PrimeNumberChecker();
+		primeNumbers = new PrimeNumberGenerator();
 		
 	}
 
