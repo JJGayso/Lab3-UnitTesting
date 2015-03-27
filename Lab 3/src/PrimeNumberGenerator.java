@@ -1,11 +1,10 @@
-import java.time.temporal.ValueRange;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class PrimeNumberGenerator {
 
-	public static List<Integer>generate(Integer inputNumber) {
+	public List<Integer>generate(Integer inputNumber) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
 		int i =2;
 		while (i < inputNumber) {
