@@ -1,8 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class PrimeNumberGenerator {
 
-	public Object generate(Integer inputNumber) {
-		// TODO Auto-generated method stub
+	public static List<Integer>generate(Integer inputNumber) {
+		ArrayList<Integer> primes = new ArrayList<Integer>();
+		if (inputNumber == 2) {
+			primes.add(1);
+			return primes;
+		}
 		return null;
 	}
 	
