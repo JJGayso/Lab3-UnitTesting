@@ -30,7 +30,7 @@ public class PrimeNumberGeneratorTest {
 	public static Collection<Object[]> producePrimeNumers() {
 		return Arrays.asList(new Object[][] {
 				{1, null},
-				{2, 1}
+				{2, (1)}
 		});
 	}
 	
