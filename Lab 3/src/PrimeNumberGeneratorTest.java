@@ -34,7 +34,8 @@ public class PrimeNumberGeneratorTest {
 	public static Collection<Object[]> producePrimeNumers() {
 		return Arrays.asList(new Object[][] {
 				{1, list()},
-				{2, list(1)}
+				{2, list(1)},
+				{5, list(1, 2, 3, 5)}
 		});
 	}
 	
