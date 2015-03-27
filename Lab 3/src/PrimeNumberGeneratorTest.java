@@ -16,6 +16,10 @@ public class PrimeNumberGeneratorTest {
 	private List<Integer> expectedResult;
 	private PrimeNumberGenerator primeNumbers;
 	
+	public static List<Integer> list(Integer...integers) {
+		return Arrays.asList(integers);
+	}
+	
 	@Before
 	public void initialize() {
 		primeNumbers = new PrimeNumberGenerator();
@@ -30,7 +34,7 @@ public class PrimeNumberGeneratorTest {
 	public static Collection<Object[]> producePrimeNumers() {
 		return Arrays.asList(new Object[][] {
 				{1, null},
-				{2, (1)}
+				{2, list(1)}
 		});
 	}
 	
