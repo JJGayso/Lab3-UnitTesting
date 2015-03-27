@@ -20,5 +20,10 @@ public class PrimeNumberGeneratorTest {
 	public void test() {
 		fail("Not yet implemented");
 	}
+	
+	public PrimeNumberGeneratorTest (Integer inputNumber, Boolean expectedResult) {
+		this.inputNumber = inputNumber;
+		this.expectedResult = expectedResult;
+	}
 
 }
