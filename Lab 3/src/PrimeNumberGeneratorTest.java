@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -12,21 +13,15 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 public class PrimeNumberGeneratorTest {
 	private Integer inputNumber;
-	private Boolean expectedResult;
+	private List<Integer> expectedResult;
 	private PrimeNumberGenerator primeNumbers;
 	
 	@Before
 	public void initialize() {
 		primeNumbers = new PrimeNumberGenerator();
 		
-	}
-
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 	
-	public PrimeNumberGeneratorTest (Integer inputNumber, Boolean expectedResult) {
+	public PrimeNumberGeneratorTest (Integer inputNumber, List<Integer> expectedResult) {
 		this.inputNumber = inputNumber;
 		this.expectedResult = expectedResult;
 	}
@@ -34,8 +29,13 @@ public class PrimeNumberGeneratorTest {
 	@Parameterized.Parameters
 	public static Collection producePrimeNumers() {
 		return Arrays.asList(new Object[][] {
-				{2}
-		}
+				
+		});
+	}
+	
+	@Test
+	public void testPrimeNumberGeneration() {
+		assertEquals(expectedResult, primeNumbers.generate(inputNumber));
 	}
 
 }
